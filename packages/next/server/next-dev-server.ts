@@ -98,7 +98,7 @@ export default class DevServer extends Server {
       )
     }
     this.isCustomServer = !options.isNextDevCommand
-    this.pagesDir = findPagesDir(this.dir)
+    this.pagesDir = findPagesDir(this.dir, this.nextConfig.pagesDir)
     this.staticPathsWorker = new Worker(
       require.resolve('./static-paths-worker'),
       {

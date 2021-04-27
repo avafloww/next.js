@@ -60,6 +60,7 @@ export type NextConfig = { [key: string]: any } & {
       skipValidation?: boolean
     }
   }
+  pagesDir?: string
 }
 
 export const defaultConfig: NextConfig = {
